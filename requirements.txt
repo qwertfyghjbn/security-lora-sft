@@ -1,0 +1,11 @@
+# PyTorch 需通过额外 index 安装，见 install.sh
+# 其余依赖通过本文件安装：uv pip install -r requirements.txt
+trl>=0.9.4
+transformers>=4.45.0
+peft>=0.13.0
+accelerate>=0.34.0
+bitsandbytes>=0.43.0
+datasets>=2.20.0
+setuptools
+# torchao: 0.9.0 兼容 torch 2.6.0 但触发 PEFT 0.19+ 的版本检查导致 raise；
+#          >=0.16.0 需要 torch>=2.7.0（cu124 不可用）。直接不安装，两端均安全跳过。

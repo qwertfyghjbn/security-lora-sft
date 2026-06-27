@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Unsloth compiled cache
+unsloth_compiled_cache/
+
+# Training checkpoints (large files, not essential for repo)
+output/checkpoint-*/
+
+# Claude project files
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model cache
+.cache/
